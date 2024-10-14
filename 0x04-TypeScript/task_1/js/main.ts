@@ -8,10 +8,10 @@ interface Teacher {
 }
 
 const teacher3: Teacher = {
-  firstName: 'Rose',
+  firstName: 'John',
   fullTimeEmployee: false,
-  lastName: 'Mwende',
-  location: 'Kenya',
+  lastName: 'Doe',
+  location: 'London',
   contract: false,
 };
 
