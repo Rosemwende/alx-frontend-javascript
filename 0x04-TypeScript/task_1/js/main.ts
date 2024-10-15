@@ -17,7 +17,6 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
-// task_1/js/main.ts (continuing)
 interface Directors extends Teacher {
   numberOfReports: number;
 }
@@ -31,3 +30,8 @@ const director1: Directors = {
 };
 
 console.log(director1);
+
+function printTeacher(firstName: string, lastName: string): string {
+	return '${firstName[0]} ${lastName}';
+}
+printTeacher("Rose", "Mwende");
