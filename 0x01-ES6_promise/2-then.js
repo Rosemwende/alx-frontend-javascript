@@ -1,14 +1,14 @@
 function handleResponseFromAPI(promise) {
   return promise
-    .then(() => ({
-      status: 200,
-      body: 'success',
-    }))
-    .catch(() => {
-      return new Error('Error');
+    .then(response => {
+      console.log("Got a response from the API");
+      return {
+        status: 200,
+        body: 'success',
+      };
     })
-    .finally(() => {
-      console.log('Got a response from the API');
+    .catch(() => {
+      return new Error();
     });
 }
 
