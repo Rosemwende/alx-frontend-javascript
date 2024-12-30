@@ -6,11 +6,10 @@ export default class Building {
     this._sqft = sqft;
   }
 
-
-
   get sqft() {
     return this._sqft;
   }
+
   static evacuationWarningMessage() {
     throw new Error('This method must be overridden by subclasses');
   }
